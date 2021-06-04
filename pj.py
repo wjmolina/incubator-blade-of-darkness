@@ -11,5 +11,6 @@ Player1 = Bladex.CreateEntity(
 )
 Player1.Angle = 4.80641487042
 Player1.Data = Basic_Funcs.PlayerPerson(Player1)
+Player1.SetOnFloor()
 
 Actions.TakeObject(Player1.Name, Player1_weapon.Name)

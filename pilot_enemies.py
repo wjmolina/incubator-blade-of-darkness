@@ -13,6 +13,8 @@ enemy_1.Blind = 1
 enemy_1.Deaf = 1
 enemy_1.ActionAreaMin = pow(2, 0)
 enemy_1.ActionAreaMax = pow(2, 1)
+enemy_1.SetOnFloor()
+
 EnemyTypes.EnemyDefaultFuncs(enemy_1)
 
 weapon_1 = Bladex.CreateEntity("weapon_1", "Gladius", 0, 0, 0, "Weapon")
