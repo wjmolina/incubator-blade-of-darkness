@@ -5,6 +5,8 @@ import Sounds
 
 GameText.MapList["PILOT"] = ["pilot"]
 
+Bladex.SetSun(1, -20, 20, -20)
+
 # pilot_doors
 
 SND_SLIDE_GATE = Sounds.CreateEntitySound(
@@ -47,8 +49,10 @@ def move_gate(gate, is_open=1):
     )
 
 
-def awaken_enemy_1(sector, entity):
-    if entity == "Player1":
+def awaken_enemy_1(sector_index, entity_name):
+    if entity_name == "Player1":
         enemy_1 = Bladex.GetEntity("enemy_1")
         enemy_1.Blind = 0
         enemy_1.Deaf = 0
+        sector_1 = Bladex.GetSector(18190.1692214, -1067.67050036, 1278.97962967)
+        sector_1.OnEnter = None
