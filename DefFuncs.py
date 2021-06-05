@@ -55,4 +55,4 @@ def awaken_enemy_1(sector_index, entity_name):
         enemy_1.Blind = 0
         enemy_1.Deaf = 0
         sector_1 = Bladex.GetSector(18190.1692214, -1067.67050036, 1278.97962967)
-        sector_1.OnEnter = None
+        sector_1.OnEnter = ""
