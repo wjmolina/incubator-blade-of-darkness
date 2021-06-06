@@ -1,5 +1,3 @@
-from math import pow
-
 import Actions
 import Bladex
 import EnemyTypes
@@ -11,8 +9,6 @@ enemy_1 = Bladex.CreateEntity(
 enemy_1.Angle = 1.66235867261
 enemy_1.Blind = 1
 enemy_1.Deaf = 1
-enemy_1.ActionAreaMin = pow(2, 0)
-enemy_1.ActionAreaMax = pow(2, 1)
 enemy_1.SetOnFloor()
 
 EnemyTypes.EnemyDefaultFuncs(enemy_1)

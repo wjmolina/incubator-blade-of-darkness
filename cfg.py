@@ -3,9 +3,9 @@ import LoadBar
 
 LoadBar.AutoProgressBar(366, "Blade_progress.jpg")
 
-execfile(r"..\..\Scripts\sys_init.py")
+execfile("..\\..\\Scripts\\sys_init.py")
 Bladex.ReadLevel("pilot.lvl")
-execfile(r"..\..\Scripts\BladeInit.py")
+execfile("..\\..\\Scripts\\BladeInit.py")
 
 execfile("DefFuncs.py")
 
